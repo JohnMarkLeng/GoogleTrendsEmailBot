@@ -1,3 +1,7 @@
+#This file automates the gathering of Google Trends Data and generation/sending of emails at 11 am everyday. 
+#It interacts with the NodeServer.js API endpoints to gather the trending news. 
+
+
 import smtplib
 import ssl
 from email.message import EmailMessage
@@ -7,9 +11,7 @@ import schedule
 from email.mime.text import MIMEText
 import time
 
-#Email python: https://towardsdatascience.com/how-to-easily-automate-emails-with-python-8b476045c151
-
-
+#Reference for python emails: https://towardsdatascience.com/how-to-easily-automate-emails-with-python-8b476045c151
 
 
 
@@ -40,7 +42,7 @@ def mail():
     """
 
     email_sender = 'GooogleTrendsBot@gmail.com'
-    email_password = ''             #####Dont Leak This Pass!!!######!!!!!
+    email_password = ''             #####This is where your unique email password would go
     email_receiver = 'gooogletrendsbot@gmail.com'
 
     today = date.today()

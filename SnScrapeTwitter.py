@@ -1,4 +1,5 @@
-#Include methods that can then be called from the Node API
+#This file deals with the scraping and filtering of Twitter data, but after inspection of the returned data,
+#I decided against it's inclusion in the automated email due to the inconsistent and irrelevant results.   
 
 import snscrape.modules.twitter as sntwitter
 import pandas as pd

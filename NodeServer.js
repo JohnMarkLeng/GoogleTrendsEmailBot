@@ -1,17 +1,11 @@
-// Building this isn't work. It's something Sick I want to make with the constraints of learning/building new skills.
-//I'm having a great time building it. It's cool. A means to an end.  
 
 //Progress:
 //Built Node Server with API endpoints
-//Made Api endpoints for Google Trends across countries and topics: Exhausted this 
-//Move onto Social media scraping and NLP 
+//Made Api endpoints for Google Trends across countries and topics
+//Built twitter scraper in SnScrapeTwitter.py although after testing it, I decided against including the data in the emails. 
+//Designed python script to interact with NodeJS API and send emails periodically
 
 
-//TODO: 
-// Connect Node api endpoint to Python file
-// Create another file that will run periodically to call the node endpoints and formulate the email text and Media
-// Create a connection to mongoDB, free database and save the daily emails for retrieval. (ill need to figure out a good way to store it)
-//Then I'm done
 
 const googleTrends = require('google-trends-api');
 
